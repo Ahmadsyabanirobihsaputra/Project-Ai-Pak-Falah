@@ -411,6 +411,9 @@ MonoBehaviour:
   actionType: 0
   sceneName: menu2
   sceneIndex: 0
+  enableRandomScene: 0
+  fallbackSceneName: NamaScene
+  randomScenes: []
 --- !u!114 &112791765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -948,9 +951,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FarmingSystem
   counterText: {fileID: 601068341}
   counterFormat: '{0} / {1}'
+  useRandomTarget: 1
+  firstOpenRange: {x: 1, y: 5}
+  secondOpenRange: {x: 5, y: 10}
+  thirdPlusOpenRange: {x: 10, y: 20}
   requiredHarvests: 12
   nextSceneName: Testscene2
   nextSceneDelay: 2
+  onWin:
+    m_PersistentCalls:
+      m_Calls: []
+  timerText: {fileID: 0}
+  timerDuration: 0
+  timerFormat: '{0:00}:{1:00}'
+  timeUpSceneName: 
+  onTimeUp:
+    m_PersistentCalls:
+      m_Calls: []
+  jumpscarePanel: {fileID: 0}
+  jumpscareChance: 20
+  jumpscareIntervalRange: {x: 10, y: 20}
+  jumpscareDuration: 2
+  jumpscareResetsPlots: 1
   showDebug: 1
 --- !u!4 &307545056
 Transform:
@@ -5898,6 +5920,12 @@ MonoBehaviour:
   targetSceneName: Testscene2
   transitionDelay: 0.3
   fadePanel: {fileID: 0}
+  enableRandomScene: 1
+  randomScenes:
+  - sceneName: Testscene2
+    weight: 40
+  - sceneName: Testscene4
+    weight: 60
   interactKey: 19
   isLocked: 0
   lockedMessage: Pintu terkunci...

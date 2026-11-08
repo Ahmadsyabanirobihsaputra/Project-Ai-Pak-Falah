@@ -228,8 +228,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: -16}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -4.8856, y: -16}
+  m_SizeDelta: {x: 100.53, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &596328485
 MonoBehaviour:
@@ -1138,6 +1138,13 @@ MonoBehaviour:
   actionType: 0
   sceneName: Testscene1
   sceneIndex: 1
+  enableRandomScene: 1
+  fallbackSceneName: Testscene1
+  randomScenes:
+  - sceneName: Testscene1 1
+    weight: 70
+  - sceneName: Testscene1
+    weight: 30
 --- !u!1 &1754642932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,6 +1416,9 @@ MonoBehaviour:
   actionType: 2
   sceneName: Testscene1
   sceneIndex: 0
+  enableRandomScene: 0
+  fallbackSceneName: NamaScene
+  randomScenes: []
 --- !u!114 &1969710870
 MonoBehaviour:
   m_ObjectHideFlags: 0
