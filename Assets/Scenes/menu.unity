@@ -1413,7 +1413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea7839d6e83e7b54481f7d8f5c17bcde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonAction
-  actionType: 2
+  actionType: 3
   sceneName: Testscene1
   sceneIndex: 0
   enableRandomScene: 0
